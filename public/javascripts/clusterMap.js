@@ -5,6 +5,9 @@ const map = new mapboxgl.Map({
     center: [-103.59179687498357, 40.66995747013945],
     zoom: 3
 });
+
+// Display fullscreen control.
+map.addControl(new mapboxgl.FullscreenControl(), 'top-left');
 // Display map navigation controls.
 map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 
@@ -40,7 +43,7 @@ map.on('load', function () {
                 10,
                 '#b7d9b4',
                 30,
-                '#5d6126'
+                '#55D6BE'
             ],
             'circle-radius': [
                 'step',

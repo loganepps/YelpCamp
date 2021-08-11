@@ -1,9 +1,25 @@
 #cluster-map {
     width: 100%;
-    height: 500px;
+    height: 325px;
 }
 
 #map {
     width: 100%;
     height: 300px;
+}
+
+#tent,
+#yelp,
+#camp {
+    transition: color .3s;
+}
+
+#tent:hover {
+    color: #fba938;
+}
+#yelp:hover {
+    color: #b0d350;
+}
+#camp:hover {
+    color: #55D6BE;
 }

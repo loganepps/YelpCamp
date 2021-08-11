@@ -8,8 +8,9 @@ const map = new mapboxgl.Map({
 
 // Display map navigation controls.
 map.addControl(new mapboxgl.NavigationControl());
+map.addControl(new mapboxgl.FullscreenControl(), 'top-left');
 
-new mapboxgl.Marker({color: 'olivedrab'})
+new mapboxgl.Marker({color: '#de4c28'})
     .setLngLat(campground.geometry.coordinates)
     .setPopup(
         new mapboxgl.Popup({offset: 25})

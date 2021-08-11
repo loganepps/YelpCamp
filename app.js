@@ -88,6 +88,7 @@ const scriptSrcUrls = [
     "https://kit.fontawesome.com",
     "https://cdnjs.cloudflare.com",
     "https://cdn.jsdelivr.net",
+    "https://code.jquery.com"
 ];
 const styleSrcUrls = [
     "https://cdn.jsdelivr.net",
@@ -103,7 +104,9 @@ const connectSrcUrls = [
     "https://*.tiles.mapbox.com",
     "https://events.mapbox.com",
 ];
-const fontSrcUrls = [];
+const fontSrcUrls = [
+    "https://use.fontawesome.com"
+];
 app.use(
     helmet.contentSecurityPolicy({
         directives: {

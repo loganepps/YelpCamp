@@ -8,19 +8,19 @@ body {
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 .cover-container {
-    max-width: 60vw;
+    max-width: 80vw;
 }
 
 .nav-link {
+    color: rgba(183, 217, 180, 0.6);
     padding: 0.25rem 0;
     font-weight: 700;
-    color: rgba(183, 217, 180, 0.6);
     margin-left: 1rem;
     border-bottom: 0.25rem solid transparent;
 }
 .nav-link:hover {
-    color: rgba(251, 169, 56, 0.9);
-    border-bottom-color: rgba(183, 217, 180, 0.9);
+    color: rgba(183, 217, 180, 0.9);
+    border-bottom-color: rgba(251, 169, 56, 0.9);
 }
 
 .nav-link.active {
@@ -28,7 +28,29 @@ body {
     border-bottom-color: rgba(251, 169, 56, 0.9);
 }
 
-.btn-secondary, .btn-secondary:hover {
-    color: #39411C;
+.btn {
+    background: #fff;
+    color: #000;
     text-shadow: none;
+}
+
+.btn:hover {
+    background: rgba(251, 169, 56, 0.9);
+    color: #000;
+}
+
+h5 {
+    color: rgba(183, 217, 180, 0.9);
+}
+
+@media (min-width: 576px) {
+    .cover-container {
+        max-width: 60vw;
+    }
+}
+
+@media (min-width: 992px) {
+    header, main {
+        font-size: large;
+    }
 }
